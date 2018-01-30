@@ -5,24 +5,21 @@
   "author": "",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
-    "build": "node build/build.js"
+    "dev": "webpack-dev-server --client-log-level none --color --inline --hot --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js --progress --color"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "shelljs": "^0.7.6",
+    "babel": "^6.23.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "ts-loader": "^3.3.1",
-    "tslint": "^5.9.1",
-    "tslint-config-standard": "^7.0.0",
-    "tslint-loader": "^3.5.3",
     "typescript": "^2.6.2",
-    "uglifyjs-webpack-plugin": "^1.1.1",
-    "webpack": "^3.6.0",
-    "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-dev-server": "^2.9.1",
-    "webpack-merge": "^4.1.0"
+    "uglifyjs-webpack-plugin": "^1.1.8",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-merge": "^4.1.1"
   },
   "engines": {
     "node": ">= 6.0.0",

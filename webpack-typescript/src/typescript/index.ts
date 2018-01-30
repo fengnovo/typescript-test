@@ -15,5 +15,6 @@ function greeter(person : Person) {
 }
 
 let user = new Student("Jane", "M.", "User");
+console.log('sdfs');
 
 document.body.innerHTML = greeter(user);
