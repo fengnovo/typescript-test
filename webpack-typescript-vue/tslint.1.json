@@ -1,21 +1,19 @@
 {
   "compilerOptions": {
-    "allowJs": true,
     "target": "es5",
-    "baseUrl": ".",
     "lib": [
       "dom",
       "es2015"
     ],
     "module": "es2015",
     "moduleResolution": "node",
-    "outDir": "lib",
     "experimentalDecorators": true,
-    "declaration": false,
+    "allowJs": true,
     "strict": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "removeComments": true,
-    "strictPropertyInitialization": false
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "jsx": "preserve",
+    "jsxFactory": "h"
   },
   "include": [
     "./**/*.ts"
